@@ -6,8 +6,8 @@ import {Inner2Component} from "../inner2/inner2.component";
 import {SubmoduleComponent} from "./submodule.component";
 
 const routes : Routes = [
-  {path: "inner1", component: Inner1Component},
-  {path: "inner2", component: Inner2Component}
+  {path: 'inner1', component: Inner1Component},
+  {path: 'inner2', component: Inner2Component}
 ]
 
 @NgModule({
