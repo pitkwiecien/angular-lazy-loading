@@ -4,6 +4,7 @@ import {RouterModule, Routes} from "@angular/router";
 import {Inner1Component} from "../inner1/inner1.component";
 import {Inner2Component} from "../inner2/inner2.component";
 import {SubmoduleComponent} from "./submodule.component";
+import {FormsModule} from "@angular/forms";
 
 const routes : Routes = [
   {path: 'inner1', component: Inner1Component},
@@ -18,7 +19,8 @@ const routes : Routes = [
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    FormsModule
   ],
   exports: [
     SubmoduleComponent,
